@@ -179,7 +179,7 @@ growth-experiment-tracker/
   Your browser does not support the video tag.
 </video>
 
-Or view it directly: [demonstration.mp4](demonstration.mp4)
+Or view it directly: https://drive.google.com/file/d/1X7nHZCTRP-F9obpBtAs6bncdF6ZX0Ltp/view?usp=drivesdk
 
 Topics covered:
 - Architecture and folder structure
