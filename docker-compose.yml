@@ -1,0 +1,34 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:15-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: experiments_dev
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    depends_on:
+      - db
+    environment:
+      FLASK_ENV: development
+      DATABASE_URL: postgresql://postgres:postgres@db:5432/experiments_dev
+      HUGGINGFACE_TOKEN: ${HUGGINGFACE_TOKEN}
+      SECRET_KEY: ${SECRET_KEY}
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend:/app
+
+volumes:
+  postgres_data:

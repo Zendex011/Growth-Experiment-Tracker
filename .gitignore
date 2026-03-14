@@ -1,0 +1,61 @@
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+myenv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Node / JS
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn.lock
+package-lock.json
+
+# Database
+*.db
+*.sqlite3
+*.s3db
+*.db-journal
+
+# Secrets
+postgre_pass.txt
+*.pem
+*.key
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS Data
+.DS_Store
+Thumbs.db
