@@ -173,9 +173,13 @@ growth-experiment-tracker/
 
 ---
 
-## Walkthrough Video
+## Demonstration
 
-[Link to be added before submission]
+<video src="https://github.com/user/repo/raw/main/demonstration.mp4" controls="controls" style="max-width: 100%;">
+  Your browser does not support the video tag.
+</video>
+
+Or view it directly: [demonstration.mp4](demonstration.mp4)
 
 Topics covered:
 - Architecture and folder structure
